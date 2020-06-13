@@ -1,9 +1,17 @@
-node-livereload
+esm-livereload
 ===============
 
-![Build status](https://travis-ci.org/napcs/node-livereload.svg?branch=master)
+![Build status](https://travis-ci.org/direktspeed/esm-livereload.svg?branch=master)
 
-An implementation of the LiveReload server in Node.js. It's an alternative to the graphical [http://livereload.com/](http://livereload.com/) application, which monitors files for changes and reloads your web browser.
+An ECMAScript implementation of a LiveReload server. It's an alternative to the graphical [http://livereload.com/](http://livereload.com/) application, which monitors files for changes and reloads your web browser. It is the successor of node-livereload
+
+## Supported Runtimes
+- deno
+- nodejs
+- graaljs
+- electron
+- nwjs
+
 
 ## Usage
 
@@ -33,15 +41,15 @@ need to change the above script.
 
 ## Running LiveReload
 
-You can run LiveReload two ways: using the CLI application or by writing your own server using the API.
+You can run LiveReload many ways: using the CLI application or by writing your own server using the API.
 
-### Method 1: Using the Command line Interface
+### Method 1: Using the NodeJS Command line Interface
 
 To use livereload from the command line:
 
 ```sh
-$ npm install -g livereload
-$ livereload [path]
+$ npm install -g esmreload
+$ esmreload [path]
 ```
 
 The commandline options are
@@ -66,7 +74,7 @@ $ livereload . -w 1000 -d
 To use the api within a project:
 
 ```sh
-$ npm install livereload --save
+$ npm install esmreload --save
 ```
 
 Then, create a server and fire it up.
