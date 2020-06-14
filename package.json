@@ -1,14 +1,14 @@
 {
-  "name": "livereload",
-  "description": "LiveReload server",
+  "name": "esmreload",
+  "description": "LiveReload server Lib",
   "version": "0.9.1",
   "contributors": [
     {
-      "name": "Brian P. Hogan",
-      "email": "brianhogan@napcs.com"
+      "name": "Frank Lemanschik",
+      "email": "frank@dspeed.eu"
     }
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "http://github.com/napcs/node-livereload.git"
@@ -20,7 +20,6 @@
   "dependencies": {
     "chokidar": "^3.3.0",
     "livereload-js": "^3.1.0",
-    "opts": ">= 1.2.0",
     "ws": "^6.2.1"
   },
   "devDependencies": {
